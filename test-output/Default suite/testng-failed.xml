@@ -3,14 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TextBoxPracticeTest">
+      <class name="testcases.TC003_CB">
         <methods>
-          <include name="selectRadioButtons"/>
-          <include name="createObject"/>
+          <include name="setup"/>
           <include name="tearDown"/>
-          <include name="launchBrowser"/>
+          <include name="clickElements"/>
+          <include name="createObject"/>
+          <include name="verifyCheckBoxes"/>
+          <include name="clickPractice"/>
+          <include name="closePopup"/>
         </methods>
-      </class> <!-- testcases.TextBoxPracticeTest -->
+      </class> <!-- testcases.TC003_CB -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

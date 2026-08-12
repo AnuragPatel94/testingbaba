@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Astrovidhan Test Suite">
+
+ <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Astrovidhan Test Cases">
+
+        <classes>
+            <!--<class name="testcases.TC001_TextBox"/>-->
+           <!---> <class name="testcases.TC002_RB"/>-->
+            <class name="testcases.TC003_CB"/>
+        </classes>
+
+    </test>
+
+</suite>

@@ -1,6 +1,7 @@
 package pages;
 
 import java.time.Duration;
+import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,7 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import basepage.BasePage;
 
 public class TextBoxPractice extends BasePage {
@@ -23,49 +23,36 @@ public class TextBoxPractice extends BasePage {
 	}
 
 	@FindBy(xpath="//button[normalize-space()='×']")
-	WebElement closebtn;
+	private WebElement closebtn;
 
 	@FindBy(xpath=("//a[normalize-space()='Practice']"))
-	WebElement practiceBtn;
+	private WebElement practiceBtn;
 
 	@FindBy(xpath=("//button[normalize-space()='elements']"))
-	WebElement elementsBtn;
+	private WebElement elementsBtn;
 
 	@FindBy(xpath=("//a[normalize-space()='text box']"))
-	WebElement textBoxBtn;
+	private WebElement textBoxBtn;
 
 	@FindBy(xpath=("//input[@id='fullname1']"))
-	WebElement fullName;
+	private WebElement fullName;
 
 	@FindBy(xpath=("//input[@id='fullemail1']"))
-	WebElement email;
+	private WebElement email;
 
 	@FindBy(xpath=("//textarea[@id='fulladdresh1']"))
-	WebElement currentAddress;
+	private WebElement currentAddress;
 
 	@FindBy(xpath=("//textarea[@id='paddresh1']"))
-	WebElement permanentAddress;
+	private WebElement permanentAddress;
 
 	@FindBy(xpath=("//input[@value='Submit']"))
-	WebElement submitBtn;
-
-	@FindBy(xpath=("//a[normalize-space()='radio buttons']"))
-	WebElement RadioBtn;
-
-	@FindBy(xpath = "//input[@id='yes']")
-	WebElement yesBtn;
-
-	@FindBy(xpath = "//input[@id='impressive']")
-	WebElement impressiveBtn;
-
-	@FindBy(xpath = "//input[@id='no']")
-	WebElement noBtn;
+	private WebElement submitBtn;
 	
-	@FindBy(xpath = "//p[@id='radio-content']")
-	WebElement radioMessage;
-	
-	
+	@FindBy(xpath = "//*[@class='col-md-6 mt-5']//label")
+	private List<WebElement> listofElements;
 
+	
 	public void clickonClose() {
 	    try {
 	        Thread.sleep(2000);
@@ -101,74 +88,35 @@ public class TextBoxPractice extends BasePage {
 		currentAddress.sendKeys(getCellData(excelFilePath,0,1,2));
 		permanentAddress.sendKeys(getCellData(excelFilePath,0,1,3));
 	}
+	
+	
+	public void verifyFillDetails() {
+
+	    for (int i = 1; i < listofElements.size(); i += 2) {
+
+	        int column = (i - 1) / 2;
+            String expected =getCellData(excelFilePath, 0, 1, column);
+            String actual =listofElements.get(i).getText();
+
+	        System.out.println("-----------------------------");
+	        System.out.println("Column   : " + column);
+	        System.out.println("Expected : " + expected);
+	        System.out.println("Actual   : " + actual);
+
+	        Assert.assertEquals(
+	                actual,
+	                expected,
+	                "Details mismatch at column " + column
+	        );
+
+	        System.out.println("Verification : PASS");
+	    }
+	}
+		
 
 	public void clickSubmit()
 	{
 		submitBtn.click();
 	}
-
-	public void clickRadioButtonMenu()
-	{
-       
-		RadioBtn.click();
-	}
-
-	public void selectRadioButtons() throws InterruptedException {
-
-	    Thread.sleep(5000);
-
-	    for (int i = 1; i <= 3; i++) {
-
-	    	String value = getCellData(excelFilePath, 1, i, 0);
-	    	String status = getCellData(excelFilePath, 1, i, 1);
-
-	    	System.out.println("--------------------------------");
-	    	System.out.println("Row       : " + i);
-	    	System.out.println("Value     : [" + value + "]");
-	    	System.out.println("Status    : [" + status + "]");
-
-	        if (status.equalsIgnoreCase("TRUE")) {
-
-	            switch (value.toLowerCase()) {
-
-	            case "yes":
-	                yesBtn.click();
-	                break;
-
-	            case "no":
-	                noBtn.click();
-	                break;
-
-	            case "impressive":
-	                impressiveBtn.click();
-	                break;
-
-	            default:
-	                System.out.println("Invalid Radio Button : " + value);
-	                continue;
-	            }
-
-	            
-	            Thread.sleep(3000);
-	            String actualMessage = radioMessage.getText();
-	            String expectedMessage = "You have selected " + value.toLowerCase();
-
-	            
-	            System.out.println("=================================");
-	            System.out.println("Clicked Radio Button : " + value);
-	            System.out.println("Expected Message     : " + expectedMessage);
-	            System.out.println("Actual Message       : " + actualMessage);
-
-	            // Verify
-	            Assert.assertEquals(actualMessage, expectedMessage);
-
-	            System.out.println("Verification : PASS");
-
-	        } else {
-
-	            System.out.println("Skipped Radio Button : " + value);
-	        }
-	    }
-	}}
-	        
+}
 	     

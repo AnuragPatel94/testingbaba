@@ -1,57 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-08T14:07:24 IST" name="Default suite" finished-at="2026-08-08T14:08:00 IST" duration-ms="36625">
+  <suite started-at="2026-08-12T16:24:40 IST" name="Astrovidhan Test Suite" finished-at="2026-08-12T16:25:00 IST" duration-ms="20859">
     <groups>
     </groups>
-    <test started-at="2026-08-08T14:07:24 IST" name="Default test" finished-at="2026-08-08T14:08:00 IST" duration-ms="36625">
-      <class name="testcases.TextBoxPracticeTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.TextBoxPracticeTest@ae13544]" started-at="2026-08-08T14:07:24 IST" name="launchBrowser" finished-at="2026-08-08T14:07:38 IST" duration-ms="13907" status="PASS">
+    <test started-at="2026-08-12T16:24:40 IST" name="Astrovidhan Test Cases" finished-at="2026-08-12T16:25:00 IST" duration-ms="20859">
+      <class name="testcases.TC003_CB">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC003_CB@43c1b556]" started-at="2026-08-12T16:24:40 IST" name="setup" finished-at="2026-08-12T16:24:54 IST" duration-ms="13753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testcases.TextBoxPracticeTest@ae13544]" started-at="2026-08-08T14:07:38 IST" name="createObject" finished-at="2026-08-08T14:07:38 IST" duration-ms="35" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testcases.TC003_CB@43c1b556]" started-at="2026-08-12T16:24:54 IST" name="createObject" finished-at="2026-08-12T16:24:54 IST" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="closePopup()[pri:1, instance:testcases.TextBoxPracticeTest@ae13544]" started-at="2026-08-08T14:07:38 IST" name="closePopup" finished-at="2026-08-08T14:07:40 IST" duration-ms="2122" status="PASS">
+        <test-method signature="closePopup()[pri:13, instance:testcases.TC003_CB@43c1b556]" started-at="2026-08-12T16:24:54 IST" name="closePopup" finished-at="2026-08-12T16:24:57 IST" duration-ms="3109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closePopup -->
-        <test-method signature="clickPractice()[pri:2, instance:testcases.TextBoxPracticeTest@ae13544]" started-at="2026-08-08T14:07:40 IST" name="clickPractice" finished-at="2026-08-08T14:07:47 IST" duration-ms="6866" status="PASS">
+        <test-method signature="clickPractice()[pri:14, instance:testcases.TC003_CB@43c1b556]" started-at="2026-08-12T16:24:57 IST" name="clickPractice" finished-at="2026-08-12T16:24:59 IST" duration-ms="1617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickPractice -->
-        <test-method signature="clickElements()[pri:3, instance:testcases.TextBoxPracticeTest@ae13544]" started-at="2026-08-08T14:07:47 IST" name="clickElements" finished-at="2026-08-08T14:07:47 IST" duration-ms="81" status="PASS">
+        <test-method signature="clickElements()[pri:15, instance:testcases.TC003_CB@43c1b556]" started-at="2026-08-12T16:24:59 IST" name="clickElements" finished-at="2026-08-12T16:24:59 IST" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickElements -->
-        <test-method signature="clickTextBox()[pri:4, instance:testcases.TextBoxPracticeTest@ae13544]" started-at="2026-08-08T14:07:47 IST" name="clickTextBox" finished-at="2026-08-08T14:07:47 IST" duration-ms="84" status="PASS">
+        <test-method signature="verifyCheckBoxes()[pri:16, instance:testcases.TC003_CB@43c1b556]" started-at="2026-08-12T16:24:59 IST" name="verifyCheckBoxes" finished-at="2026-08-12T16:25:00 IST" duration-ms="1026" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickTextBox -->
-        <test-method signature="enterData()[pri:5, instance:testcases.TextBoxPracticeTest@ae13544]" started-at="2026-08-08T14:07:47 IST" name="enterData" finished-at="2026-08-08T14:07:48 IST" duration-ms="1628" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterData -->
-        <test-method signature="submit()[pri:6, instance:testcases.TextBoxPracticeTest@ae13544]" started-at="2026-08-08T14:07:48 IST" name="submit" finished-at="2026-08-08T14:07:49 IST" duration-ms="85" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submit -->
-        <test-method signature="clickRadioButtonMenu()[pri:7, instance:testcases.TextBoxPracticeTest@ae13544]" started-at="2026-08-08T14:07:49 IST" name="clickRadioButtonMenu" finished-at="2026-08-08T14:07:49 IST" duration-ms="65" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickRadioButtonMenu -->
-        <test-method signature="selectRadioButtons()[pri:8, instance:testcases.TextBoxPracticeTest@ae13544]" started-at="2026-08-08T14:07:49 IST" name="selectRadioButtons" finished-at="2026-08-08T14:08:00 IST" duration-ms="11463" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectRadioButtons -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TextBoxPracticeTest@ae13544]" started-at="2026-08-08T14:08:00 IST" name="tearDown" finished-at="2026-08-08T14:08:00 IST" duration-ms="188" status="PASS">
+        </test-method> <!-- verifyCheckBoxes -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC003_CB@43c1b556]" started-at="2026-08-12T16:25:00 IST" name="tearDown" finished-at="2026-08-12T16:25:00 IST" duration-ms="715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.TextBoxPracticeTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testcases.TC003_CB -->
+    </test> <!-- Astrovidhan Test Cases -->
+  </suite> <!-- Astrovidhan Test Suite -->
 </testng-results>

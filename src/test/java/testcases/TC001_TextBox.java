@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import basepage.BasePage;
 import pages.TextBoxPractice;
 
-public class TextBoxPracticeTest extends BasePage {
+public class TC001_TextBox extends BasePage {
 
     TextBoxPractice page;
 
@@ -58,21 +58,14 @@ public class TextBoxPracticeTest extends BasePage {
         page.clickSubmit();
 
     }
-    @Test(priority = 7)
-    public void clickRadioButtonMenu() 
-    {
-
-		page.clickRadioButtonMenu();
-
-	}
-    @Test(priority = 8)
-    public void selectRadioButtons() throws InterruptedException 
-	{
-		
-		page.selectRadioButtons();
-	}
     
+    @Test(priority = 7)
+    public void verifyDetails() 
+	{
+    	
+		page.verifyFillDetails();
 	}
+}
 	
     
     
