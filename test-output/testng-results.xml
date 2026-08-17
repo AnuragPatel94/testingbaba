@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-12T16:24:40 IST" name="Astrovidhan Test Suite" finished-at="2026-08-12T16:25:00 IST" duration-ms="20859">
+  <suite started-at="2026-08-16T19:04:29 IST" name="Astrovidhan Test Suite" finished-at="2026-08-16T19:04:38 IST" duration-ms="9078">
     <groups>
     </groups>
-    <test started-at="2026-08-12T16:24:40 IST" name="Astrovidhan Test Cases" finished-at="2026-08-12T16:25:00 IST" duration-ms="20859">
-      <class name="testcases.TC003_CB">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC003_CB@43c1b556]" started-at="2026-08-12T16:24:40 IST" name="setup" finished-at="2026-08-12T16:24:54 IST" duration-ms="13753" status="PASS">
+    <test started-at="2026-08-16T19:04:29 IST" name="Astrovidhan Test Cases" finished-at="2026-08-16T19:04:38 IST" duration-ms="9078">
+      <class name="testcases.TC005_BTN">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:30 IST" name="setup" finished-at="2026-08-16T19:04:33 IST" duration-ms="3678" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,31 +23,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testcases.TC003_CB@43c1b556]" started-at="2026-08-12T16:24:54 IST" name="createObject" finished-at="2026-08-12T16:24:54 IST" duration-ms="33" status="PASS">
+        <test-method is-config="true" signature="createobject()[pri:0, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:33 IST" name="createobject" finished-at="2026-08-16T19:04:33 IST" duration-ms="64" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createObject -->
-        <test-method signature="closePopup()[pri:13, instance:testcases.TC003_CB@43c1b556]" started-at="2026-08-12T16:24:54 IST" name="closePopup" finished-at="2026-08-12T16:24:57 IST" duration-ms="3109" status="PASS">
+        </test-method> <!-- createobject -->
+        <test-method signature="closePopup()[pri:22, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:33 IST" name="closePopup" finished-at="2026-08-16T19:04:36 IST" duration-ms="2558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closePopup -->
-        <test-method signature="clickPractice()[pri:14, instance:testcases.TC003_CB@43c1b556]" started-at="2026-08-12T16:24:57 IST" name="clickPractice" finished-at="2026-08-12T16:24:59 IST" duration-ms="1617" status="PASS">
+        <test-method signature="clickPractice()[pri:23, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:36 IST" name="clickPractice" finished-at="2026-08-16T19:04:37 IST" duration-ms="529" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickPractice -->
-        <test-method signature="clickElements()[pri:15, instance:testcases.TC003_CB@43c1b556]" started-at="2026-08-12T16:24:59 IST" name="clickElements" finished-at="2026-08-12T16:24:59 IST" duration-ms="83" status="PASS">
+        <test-method signature="clickElements()[pri:24, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:37 IST" name="clickElements" finished-at="2026-08-16T19:04:37 IST" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickElements -->
-        <test-method signature="verifyCheckBoxes()[pri:16, instance:testcases.TC003_CB@43c1b556]" started-at="2026-08-12T16:24:59 IST" name="verifyCheckBoxes" finished-at="2026-08-12T16:25:00 IST" duration-ms="1026" status="PASS">
+        <test-method signature="clickButtons()[pri:25, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:37 IST" name="clickButtons" finished-at="2026-08-16T19:04:37 IST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCheckBoxes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC003_CB@43c1b556]" started-at="2026-08-12T16:25:00 IST" name="tearDown" finished-at="2026-08-12T16:25:00 IST" duration-ms="715" status="PASS">
+        </test-method> <!-- clickButtons -->
+        <test-method signature="clickondblbtn()[pri:26, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:37 IST" name="clickondblbtn" finished-at="2026-08-16T19:04:37 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickondblbtn -->
+        <test-method signature="clickonrightbtn()[pri:27, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:37 IST" name="clickonrightbtn" finished-at="2026-08-16T19:04:37 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonrightbtn -->
+        <test-method signature="clickonclickmebtn()[pri:28, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:37 IST" name="clickonclickmebtn" finished-at="2026-08-16T19:04:38 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonclickmebtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:38 IST" name="tearDown" finished-at="2026-08-16T19:04:38 IST" duration-ms="565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.TC003_CB -->
+      </class> <!-- testcases.TC005_BTN -->
     </test> <!-- Astrovidhan Test Cases -->
   </suite> <!-- Astrovidhan Test Suite -->
 </testng-results>

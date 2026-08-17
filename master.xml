@@ -16,7 +16,9 @@
         <classes>
             <!--<class name="testcases.TC001_TextBox"/>-->
            <!---> <class name="testcases.TC002_RB"/>-->
-            <class name="testcases.TC003_CB"/>
+            <!--<class name="testcases.TC003_CB"/>-->
+            <!--<class name="testcases.TC004_WT"/>-->
+             <class name="testcases.TC005_BTN"/>
         </classes>
 
     </test>

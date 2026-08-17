@@ -3,17 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TC003_CB">
+      <class name="testcases.TC005_BTN">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
+          <include name="createobject"/>
           <include name="clickElements"/>
-          <include name="createObject"/>
-          <include name="verifyCheckBoxes"/>
-          <include name="clickPractice"/>
+          <include name="setup"/>
           <include name="closePopup"/>
+          <include name="clickonclickmebtn"/>
+          <include name="clickonrightbtn"/>
+          <include name="tearDown"/>
+          <include name="clickPractice"/>
+          <include name="clickondblbtn"/>
+          <include name="clickButtons"/>
         </methods>
-      </class> <!-- testcases.TC003_CB -->
+      </class> <!-- testcases.TC005_BTN -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
