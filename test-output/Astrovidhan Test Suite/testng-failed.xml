@@ -8,14 +8,14 @@
   </listeners>
   <test thread-count="5" name="Astrovidhan Test Cases(failed)">
     <classes>
-      <class name="testcases.TC009_ALRT">
+      <class name="testcases.TC005_BTN">
         <methods>
-          <include name="createObject"/>
+          <include name="createobject"/>
           <include name="setup"/>
+          <include name="clickonrightbtn"/>
           <include name="tearDown"/>
-          <include name="clickonalert"/>
         </methods>
-      </class> <!-- testcases.TC009_ALRT -->
+      </class> <!-- testcases.TC005_BTN -->
     </classes>
   </test> <!-- Astrovidhan Test Cases(failed) -->
 </suite> <!-- Failed suite [Astrovidhan Test Suite] -->

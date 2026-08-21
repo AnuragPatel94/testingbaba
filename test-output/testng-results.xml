@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-21T15:14:52 IST" name="Astrovidhan Test Suite" finished-at="2026-08-21T15:15:16 IST" duration-ms="23914">
+  <suite started-at="2026-08-16T19:04:29 IST" name="Astrovidhan Test Suite" finished-at="2026-08-16T19:04:38 IST" duration-ms="9078">
     <groups>
     </groups>
-    <test started-at="2026-08-21T15:14:52 IST" name="Astrovidhan Test Cases" finished-at="2026-08-21T15:15:16 IST" duration-ms="23914">
-      <class name="testcases.TC009_ALRT">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC009_ALRT@22fcf7ab]" started-at="2026-08-21T15:14:52 IST" name="setup" finished-at="2026-08-21T15:15:05 IST" duration-ms="13357" status="PASS">
+    <test started-at="2026-08-16T19:04:29 IST" name="Astrovidhan Test Cases" finished-at="2026-08-16T19:04:38 IST" duration-ms="9078">
+      <class name="testcases.TC005_BTN">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:30 IST" name="setup" finished-at="2026-08-16T19:04:33 IST" duration-ms="3678" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,39 +23,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testcases.TC009_ALRT@22fcf7ab]" started-at="2026-08-21T15:15:05 IST" name="createObject" finished-at="2026-08-21T15:15:09 IST" duration-ms="3931" status="PASS">
+        <test-method is-config="true" signature="createobject()[pri:0, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:33 IST" name="createobject" finished-at="2026-08-16T19:04:33 IST" duration-ms="64" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createObject -->
-        <test-method signature="alertwindow()[pri:23, instance:testcases.TC009_ALRT@22fcf7ab]" started-at="2026-08-21T15:15:09 IST" name="alertwindow" finished-at="2026-08-21T15:15:10 IST" duration-ms="190" status="PASS">
+        </test-method> <!-- createobject -->
+        <test-method signature="closePopup()[pri:22, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:33 IST" name="closePopup" finished-at="2026-08-16T19:04:36 IST" duration-ms="2558" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- alertwindow -->
-        <test-method signature="clickonalert()[pri:24, instance:testcases.TC009_ALRT@22fcf7ab]" started-at="2026-08-21T15:15:10 IST" name="clickonalert" finished-at="2026-08-21T15:15:10 IST" duration-ms="81" status="PASS">
+        </test-method> <!-- closePopup -->
+        <test-method signature="clickPractice()[pri:23, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:36 IST" name="clickPractice" finished-at="2026-08-16T19:04:37 IST" duration-ms="529" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickonalert -->
-        <test-method signature="clickonalert1()[pri:25, instance:testcases.TC009_ALRT@22fcf7ab]" started-at="2026-08-21T15:15:10 IST" name="clickonalert1" finished-at="2026-08-21T15:15:10 IST" duration-ms="118" status="PASS">
+        </test-method> <!-- clickPractice -->
+        <test-method signature="clickElements()[pri:24, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:37 IST" name="clickElements" finished-at="2026-08-16T19:04:37 IST" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickonalert1 -->
-        <test-method signature="clickonalert2()[pri:26, instance:testcases.TC009_ALRT@22fcf7ab]" started-at="2026-08-21T15:15:10 IST" name="clickonalert2" finished-at="2026-08-21T15:15:15 IST" duration-ms="5120" status="PASS">
+        </test-method> <!-- clickElements -->
+        <test-method signature="clickButtons()[pri:25, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:37 IST" name="clickButtons" finished-at="2026-08-16T19:04:37 IST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickonalert2 -->
-        <test-method signature="clickonalert3()[pri:27, instance:testcases.TC009_ALRT@22fcf7ab]" started-at="2026-08-21T15:15:15 IST" name="clickonalert3" finished-at="2026-08-21T15:15:15 IST" duration-ms="218" status="PASS">
+        </test-method> <!-- clickButtons -->
+        <test-method signature="clickondblbtn()[pri:26, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:37 IST" name="clickondblbtn" finished-at="2026-08-16T19:04:37 IST" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickonalert3 -->
-        <test-method signature="clickonalert4()[pri:28, instance:testcases.TC009_ALRT@22fcf7ab]" started-at="2026-08-21T15:15:15 IST" name="clickonalert4" finished-at="2026-08-21T15:15:15 IST" duration-ms="114" status="PASS">
+        </test-method> <!-- clickondblbtn -->
+        <test-method signature="clickonrightbtn()[pri:27, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:37 IST" name="clickonrightbtn" finished-at="2026-08-16T19:04:37 IST" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickonalert4 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC009_ALRT@22fcf7ab]" started-at="2026-08-21T15:15:15 IST" name="tearDown" finished-at="2026-08-21T15:15:16 IST" duration-ms="325" status="PASS">
+        </test-method> <!-- clickonrightbtn -->
+        <test-method signature="clickonclickmebtn()[pri:28, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:37 IST" name="clickonclickmebtn" finished-at="2026-08-16T19:04:38 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonclickmebtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC005_BTN@2de23121]" started-at="2026-08-16T19:04:38 IST" name="tearDown" finished-at="2026-08-16T19:04:38 IST" duration-ms="565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.TC009_ALRT -->
+      </class> <!-- testcases.TC005_BTN -->
     </test> <!-- Astrovidhan Test Cases -->
   </suite> <!-- Astrovidhan Test Suite -->
 </testng-results>
