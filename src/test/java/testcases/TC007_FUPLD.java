@@ -1,20 +1,23 @@
 package testcases;
 
+import java.awt.AWTException;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
 import basepage.BasePage;
 import pages.CommonNavigation;
-import pages.RBPractice;
+import pages.FileUpload;
 
-public class TC002_RB extends BasePage {
+public class TC007_FUPLD extends BasePage {
 
-	RBPractice page;
+	FileUpload page;
 	CommonNavigation navigation;
 
 	@BeforeClass
 	public void createObject() 
 	{
-		page = new RBPractice(driver);
+		page = new FileUpload(driver);
 		navigation = new CommonNavigation(driver);
 
 		navigation.clickonClose();
@@ -22,16 +25,9 @@ public class TC002_RB extends BasePage {
 		navigation.clickOnElementsBtn();
 	}
 
-	@Test(priority = 5)
-	public void clickRadioButtonMenu()
+	@Test(priority = 17)
+	public void fileupload() throws AWTException 
 	{
-		page.clickRadioButtonMenu();
+		page.clickupload();
 	}
-
-	@Test(priority = 6)
-	public void selectRadioButtons() throws InterruptedException 
-	{
-		page.selectRadioButtons();
-	}
-
 }

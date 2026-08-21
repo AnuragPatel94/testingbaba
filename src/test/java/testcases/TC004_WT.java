@@ -4,17 +4,17 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import basepage.BasePage;
 import pages.CommonNavigation;
-import pages.RBPractice;
+import pages.WebTable;
 
-public class TC002_RB extends BasePage {
+public class TC004_WT extends BasePage{
 
-	RBPractice page;
+	WebTable page;
 	CommonNavigation navigation;
 
 	@BeforeClass
 	public void createObject() 
 	{
-		page = new RBPractice(driver);
+		page = new WebTable(driver);
 		navigation = new CommonNavigation(driver);
 
 		navigation.clickonClose();
@@ -22,16 +22,23 @@ public class TC002_RB extends BasePage {
 		navigation.clickOnElementsBtn();
 	}
 
-	@Test(priority = 5)
-	public void clickRadioButtonMenu()
+	@Test(priority=8)
+	public void clickonwebtable() 
 	{
-		page.clickRadioButtonMenu();
+		page.clickonwebtable();
 	}
 
-	@Test(priority = 6)
-	public void selectRadioButtons() throws InterruptedException 
+	@Test(priority=9)
+	public void filldata() 
 	{
-		page.selectRadioButtons();
+		page.fillDetails();
 	}
 
+	@Test(priority=10)
+	public void verifyFillDetails() 
+	{
+		page.verifyFillDetails();
+	}
 }
+
+

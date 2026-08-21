@@ -27,7 +27,7 @@ import utilities.ExcelUtils;
 
 public class BasePage implements ExcelUtils {
 
-    public static WebDriver driver;
+    public static  WebDriver driver;
     public static Properties prop;
     
    

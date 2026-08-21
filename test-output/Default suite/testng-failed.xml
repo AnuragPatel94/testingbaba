@@ -7,11 +7,9 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="clickElements"/>
+          <include name="navigateToElements"/>
           <include name="createObject"/>
           <include name="verifyCheckBoxes"/>
-          <include name="clickPractice"/>
-          <include name="closePopup"/>
         </methods>
       </class> <!-- testcases.TC003_CB -->
     </classes>

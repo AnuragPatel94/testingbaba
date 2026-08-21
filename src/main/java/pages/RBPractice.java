@@ -12,21 +12,12 @@ public class RBPractice extends BasePage {
 	String excelFilePath = "C:\\Users\\lib-11\\Desktop\\testingbaba\\TestData\\testdata.xlsx";
 	WebDriver driver;
 
-	public RBPractice(WebDriver driver) {
-
+	public RBPractice(WebDriver driver) 
+	{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
-
-	@FindBy(xpath="//button[normalize-space()='×']")
-	private WebElement closebtn;
-
-	@FindBy(xpath=("//a[normalize-space()='Practice']"))
-	private WebElement practiceBtn;
-
-	@FindBy(xpath=("//button[normalize-space()='elements']"))
-	private WebElement elementsBtn;
 
 	@FindBy(xpath=("//a[normalize-space()='radio buttons']"))
 	private WebElement RadioBtn;
@@ -43,30 +34,16 @@ public class RBPractice extends BasePage {
 	@FindBy(xpath = "//p[@id='radio-content']")
 	private WebElement radioMessage;
 
-   
-	public void clickonClose() {
-	    try {
-	        Thread.sleep(2000);
-	        closebtn.click();
-	    } catch (InterruptedException e) {
-	        e.printStackTrace();
-	    }
-	}
-	public void clickOnPracticeBtn() {
-		practiceBtn.click();
-	}
-	public void clickOnElementsBtn() {
-		elementsBtn.click();
-	}
+
+
 	public void clickRadioButtonMenu()
 	{
-
 		RadioBtn.click();
 	}
 
-	public void selectRadioButtons() throws InterruptedException {
-
-		Thread.sleep(5000);
+	public void selectRadioButtons() throws InterruptedException 
+	{
+		Thread.sleep(3000);
 
 		for (int i = 1; i <= 3; i++) {
 
@@ -98,12 +75,10 @@ public class RBPractice extends BasePage {
 					System.out.println("Invalid Radio Button : " + value);
 					continue;
 				}
-
-
+				
 				Thread.sleep(3000);
 				String actualMessage = radioMessage.getText();
 				String expectedMessage = "You have selected " + value.toLowerCase();
-
 
 				System.out.println("=================================");
 				System.out.println("Clicked Radio Button : " + value);
@@ -112,11 +87,10 @@ public class RBPractice extends BasePage {
 
 				// Verify
 				Assert.assertEquals(actualMessage, expectedMessage);
-
 				System.out.println("Verification : PASS");
 
-			} else {
-
+			} else 
+			{
 				System.out.println("Skipped Radio Button : " + value);
 			}
 		}

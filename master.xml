@@ -15,8 +15,17 @@
 
         <classes>
             <!--<class name="testcases.TC001_TextBox"/>-->
-           <!---> <class name="testcases.TC002_RB"/>-->
-            <class name="testcases.TC003_CB"/>
+            <!--<class name="testcases.TC002_RB"/>-->
+            <!--<class name="testcases.TC003_CB"/>-->
+            <!--<class name="testcases.TC004_WT"/>-->
+            <!--<class name="testcases.TC005_BTN"/>-->
+            <!--<class name="testcases.TC006_LK"/>-->
+            <!--<class name="testcases.TC007_FUPLD"/>-->
+             <!--<class name="testcases.TC008_BRSWIN"/>-->
+            <class name="testcases.TC009_ALRT"/>
+            
+            
+            
         </classes>
 
     </test>

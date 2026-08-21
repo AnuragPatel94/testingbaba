@@ -2,53 +2,36 @@ package testcases;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import basepage.BasePage;
 import pages.CheckBox;
+import pages.CommonNavigation;
 
 
 public class TC003_CB extends BasePage {
-   CheckBox page;
+	CheckBox page;
+	CommonNavigation navigation;
 
 	@BeforeClass
-	public void createObject() {
-
+	public void createObject()
+	{
 		page = new CheckBox(driver);
+		navigation = new CommonNavigation(driver);
 
-	}
-	
-	@Test(priority = 13)
-	public void closePopup() {
-
-		page.clickonClose();
-
-	}
-
-	@Test(priority = 14)
-	public void clickPractice() {
-
-		page.clickOnPracticeBtn();
+		navigation.clickonClose();
+		navigation.clickOnPracticeBtn();
+		navigation.clickOnElementsBtn();
 
 	}
 
-	@Test(priority = 15)
-	public void clickElements() {
 
-		page.clickOnElementsBtn();
-	}
-	
-	@Test(priority = 16)
-	public void verifyCheckBoxes()  {
-
-	    CheckBox page = new CheckBox(driver);
-
-	    page.clickCheckBoxBtn();
-
-	    page.clickMobileCheckBox();
-	    page.clickLaptopCheckBox();
-	    page.clickDesktopCheckBox();
-
-	    page.switchToMainPage();
+	@Test(priority = 7)
+	public void verifyCheckBoxes()  
+	{
+		page.clickCheckBoxBtn();
+		page.clickMobileCheckBox();
+		page.clickLaptopCheckBox();
+		page.clickDesktopCheckBox();
+		page.switchToMainPage();
 	}
 
 }

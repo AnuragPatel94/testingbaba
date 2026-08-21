@@ -1,13 +1,11 @@
 package pages;
 
-import java.time.Duration;
+
 import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import basepage.BasePage;
 
@@ -15,21 +13,11 @@ public class TextBoxPractice extends BasePage {
 	String excelFilePath = "C:\\Users\\lib-11\\Desktop\\testingbaba\\TestData\\testdata.xlsx";
 	WebDriver driver;
 
-	public TextBoxPractice(WebDriver driver) {
-
+	public TextBoxPractice(WebDriver driver) 
+	{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-
 	}
-
-	@FindBy(xpath="//button[normalize-space()='×']")
-	private WebElement closebtn;
-
-	@FindBy(xpath=("//a[normalize-space()='Practice']"))
-	private WebElement practiceBtn;
-
-	@FindBy(xpath=("//button[normalize-space()='elements']"))
-	private WebElement elementsBtn;
 
 	@FindBy(xpath=("//a[normalize-space()='text box']"))
 	private WebElement textBoxBtn;
@@ -48,33 +36,10 @@ public class TextBoxPractice extends BasePage {
 
 	@FindBy(xpath=("//input[@value='Submit']"))
 	private WebElement submitBtn;
-	
+
 	@FindBy(xpath = "//*[@class='col-md-6 mt-5']//label")
 	private List<WebElement> listofElements;
 
-	
-	public void clickonClose() {
-	    try {
-	        Thread.sleep(2000);
-	        closebtn.click();
-	    } catch (InterruptedException e) {
-	        e.printStackTrace();
-	    }
-	}
-
-	public void clickPractice()
-	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-		wait.until(ExpectedConditions.elementToBeClickable(practiceBtn));
-
-		practiceBtn.click();
-	}
-
-	public void clickElements()
-	{
-		elementsBtn.click();
-	}
 
 	public void clickTextBox() 
 	{
@@ -88,35 +53,29 @@ public class TextBoxPractice extends BasePage {
 		currentAddress.sendKeys(getCellData(excelFilePath,0,1,2));
 		permanentAddress.sendKeys(getCellData(excelFilePath,0,1,3));
 	}
-	
-	
-	public void verifyFillDetails() {
 
-	    for (int i = 1; i < listofElements.size(); i += 2) {
 
-	        int column = (i - 1) / 2;
-            String expected =getCellData(excelFilePath, 0, 1, column);
-            String actual =listofElements.get(i).getText();
+	public void verifyFillDetails() 
+	{
+		for (int i = 1; i < listofElements.size(); i += 2) {
 
-	        System.out.println("-----------------------------");
-	        System.out.println("Column   : " + column);
-	        System.out.println("Expected : " + expected);
-	        System.out.println("Actual   : " + actual);
+			int column = (i - 1) / 2;
+			String expected =getCellData(excelFilePath, 0, 1, column);
+			String actual =listofElements.get(i).getText();
 
-	        Assert.assertEquals(
-	                actual,
-	                expected,
-	                "Details mismatch at column " + column
-	        );
+			System.out.println("-----------------------------");
+			System.out.println("Column   : " + column);
+			System.out.println("Expected : " + expected);
+			System.out.println("Actual   : " + actual);
 
-	        System.out.println("Verification : PASS");
-	    }
+			Assert.assertEquals(actual,expected,"Details mismatch at column " + column);
+
+			System.out.println("Verification : PASS");
+		}
 	}
-		
 
 	public void clickSubmit()
 	{
 		submitBtn.click();
 	}
 }
-	     

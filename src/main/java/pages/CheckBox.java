@@ -1,7 +1,6 @@
 package pages;
 
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
+
 
 import basepage.BasePage;
 
@@ -23,15 +22,6 @@ public class CheckBox extends BasePage {
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		PageFactory.initElements(driver, this);
 	}
-
-	@FindBy(xpath = "//button[normalize-space()='×']")
-	private WebElement closebtn;
-
-	@FindBy(xpath = "//a[normalize-space()='Practice']")
-	private WebElement practiceBtn;
-
-	@FindBy(xpath = "//button[normalize-space()='elements']")
-	private WebElement elementsBtn;
 
 	@FindBy(xpath = "//a[normalize-space()='check box']")
 	private WebElement checkBoxBtn;
@@ -57,27 +47,6 @@ public class CheckBox extends BasePage {
 	@FindBy(xpath = "//h6[@id='text2']")
 	private WebElement Message2;
 
-	public void clickonClose() 
-	{
-		try {
-			Thread.sleep(2000);
-			closebtn.click();}
-		catch (InterruptedException e)
-		{
-			Thread.currentThread().interrupt();
-		}
-	}
-
-	public void clickOnPracticeBtn() 
-	{
-		practiceBtn.click();
-	}
-
-
-	public void clickOnElementsBtn() 
-	{
-		elementsBtn.click();
-	}
 
 	// Click Check Box menu and enter iframe
 	public void clickCheckBoxBtn() 
@@ -113,13 +82,12 @@ public class CheckBox extends BasePage {
 		wait.until(ExpectedConditions.visibilityOf(Message));
 		String message2 = Message2.getText();
 		System.out.println("Desktop checkbox message: " + message2);
-		
+
 	}
 
-             
-	
 	// Exit iframe
-	public void switchToMainPage() {
+	public void switchToMainPage() 
+	{
 		driver.switchTo().defaultContent();
 	}
 }
